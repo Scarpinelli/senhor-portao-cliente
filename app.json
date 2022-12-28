@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "owner": "pedrodomingues",
+    "name": "senhor-portao",
+    "slug": "senhor-portao",
+    "version": "0.2.2",
+    "orientation": "portrait",
+    "backgroundColor": "#ffffff",
+        "platforms": ["android", "ios"],
+        "userInterfaceStyle": "automatic",
+        "scheme": "senhor-portao",
+        "plugins": [
+            [
+                "expo-image-picker",
+                {
+                    "photosPermission": "The app accesses your photos to let you share them with your friends."
+                }
+            ],
+            [
+                "expo-notifications",
+                {
+                    "icon": "./src/assets/visual/notification-icon.png",
+                    "color": "#ffffff",
+                    "mode": "production"
+                }
+            ]
+        ],
+
+    "icon": "./src/assets/visual/icon.png",
+    "splash": {
+      "image": "./src/assets/visual/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1EB5EC"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_LOAD"
+  },
+  "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Accessing your camera will be necessary for you to upload your profile photo.",
+        "NSLocationWhenInUseUsageDescription": "This app needs your location to show you other users",
+        "NSMicrophoneUsageDescription": "This app needs your microphone access",
+        "NSPhotoLibraryAddUsageDescription": "Accessing your photos will be necessary for you to upload your profile photo.",
+        "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you share them with your friends.",
+        "UIBackgroundModes": [
+          "fetch"
+        ]
+    },
+      "config": {
+        "googleMapsApiKey": "AIzaSyCO-XElKftBMySvSNq5LZzqWaPIodzemPo"
+      },
+      "bundleIdentifier": "com.senhorportao",
+            "buildNumber": "0.2.2"
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "translucent": true,
+      "backgroundColor": "#00000000"
+  },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/visual/adaptive-icon.png",
+        "backgroundColor": "#1F3C8C"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "NOTIFICATIONS",
+        "LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE"
+      ],
+      
+      "config": {
+          "googleMaps": {
+              "apiKey": "AIzaSyCO-XElKftBMySvSNq5LZzqWaPIodzemPo"
+          }
+      },
+      "package": "com.senhorportao",
+            "versionCode": 7
+     
+    },
+    "web": {
+      "favicon": "./src/assets/visual/favicon.png"
+    }
+  }
+}
+
